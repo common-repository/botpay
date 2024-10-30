@@ -1,0 +1,281 @@
+#, fuzzy
+msgid ""
+msgstr ""
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+"Project-Id-Version: WordPress Plugin Framework\n"
+"POT-Creation-Date: 2021-02-20 18:26+0530\n"
+"PO-Revision-Date: 2021-02-20 18:26+0530\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 2.4.2\n"
+"X-Poedit-Basepath: ../..\n"
+"X-Poedit-Flags-xgettext: --add-comments=translators:\n"
+"X-Poedit-WPHeader: wp-plugin-framework.php\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: __;_e;_n:1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;esc_attr__;"
+"esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c;_n_noop:1,2;"
+"_nx_noop:3c,1,2;__ngettext_noop:1,2\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPathExcluded-0: *.min.js\n"
+"X-Poedit-SearchPathExcluded-1: vendor\n"
+
+#: plugin/Lib/Ajax.php:40
+msgid "Text"
+msgstr ""
+
+#: plugin/Lib/Cron.php:61
+msgid "Every "
+msgstr ""
+
+#: plugin/Lib/Table.php:32 plugin/Lib/Table.php:178
+msgid "Name"
+msgstr ""
+
+#: plugin/Lib/Table.php:33
+msgid "Names"
+msgstr ""
+
+#: plugin/Lib/Table.php:90
+msgid "No Items Added yet."
+msgstr ""
+
+#: plugin/Lib/Table.php:126
+msgid "Delete"
+msgstr ""
+
+#: plugin/Lib/Table.php:179
+msgid "Case One"
+msgstr ""
+
+#: plugin/Lib/Table.php:180
+msgid "Case Two"
+msgstr ""
+
+#: plugin/Lib/Table.php:181
+msgid "Case Three"
+msgstr ""
+
+#: plugin/Lib/Upload.php:41
+msgid "Upload"
+msgstr ""
+
+#: plugin/Lib/Upload.php:94
+msgid "Please Upload correct type of file only."
+msgstr ""
+
+#: plugin/Lib/Upload.php:108
+msgid "File Upload failed."
+msgstr ""
+
+#: plugin/Lib/Upload.php:122
+msgid "Successfully saved file details."
+msgstr ""
+
+#: plugin/PluginLoader.php:169
+msgid "Database table Not installed correctly."
+msgstr ""
+
+#: plugin/PluginLoader.php:323
+msgid "You are not currently logged in."
+msgstr ""
+
+#: plugin/Src/Cpt.php:60
+msgctxt "Post Type General Name"
+msgid ""
+msgstr ""
+
+#: plugin/Src/Cpt.php:61
+msgctxt "Post Type Singular Name"
+msgid ""
+msgstr ""
+
+#: plugin/Src/Cpt.php:130
+#, php-format
+msgid "CPT updated. <a href=\"%s\">View CPT</a>"
+msgstr ""
+
+#: plugin/Src/Cpt.php:131
+msgid "field updated."
+msgstr ""
+
+#: plugin/Src/Cpt.php:132
+msgid "field deleted."
+msgstr ""
+
+#: plugin/Src/Cpt.php:133
+msgid "CPT updated."
+msgstr ""
+
+#: plugin/Src/Cpt.php:134
+#, php-format
+msgid "CPT restored to revision from %s"
+msgstr ""
+
+#: plugin/Src/Cpt.php:135
+#, php-format
+msgid "CPT published. <a href=\"%s\">View Cpt</a>"
+msgstr ""
+
+#: plugin/Src/Cpt.php:136
+msgid "CPT saved."
+msgstr ""
+
+#: plugin/Src/Cpt.php:137
+#, php-format
+msgid "CPT submitted. <a target=\"_blank\" href=\"%s\">Preview cpt</a>"
+msgstr ""
+
+#: plugin/Src/Cpt.php:138
+#, php-format
+msgid ""
+"CPT scheduled for: <strong>%1$s</strong>. <a target=\"_blank\" href=\"%2$s"
+"\">Preview cpt</a>"
+msgstr ""
+
+#: plugin/Src/Cpt.php:138
+msgid "M j, Y @ G:i"
+msgstr ""
+
+#: plugin/Src/Cpt.php:139
+#, php-format
+msgid "CPT draft updated. <a target=\"_blank\" href=\"%s\">Preview cpt</a>"
+msgstr ""
+
+#: plugin/Src/Cpt.php:154
+msgctxt "taxonomy general name"
+msgid "Taxonomy"
+msgstr ""
+
+#: plugin/Src/Cpt.php:155
+msgctxt "taxonomy singular name"
+msgid "Taxonomy"
+msgstr ""
+
+#: plugin/Src/Cpt.php:156
+msgid "Search Taxonomy"
+msgstr ""
+
+#: plugin/Src/Cpt.php:157
+msgid "All Taxonomies"
+msgstr ""
+
+#: plugin/Src/Cpt.php:158
+msgid "Parent Taxonomy"
+msgstr ""
+
+#: plugin/Src/Cpt.php:159
+msgid "Parent Taxonomy:"
+msgstr ""
+
+#: plugin/Src/Cpt.php:160
+msgid "Edit Taxonomy"
+msgstr ""
+
+#: plugin/Src/Cpt.php:161
+msgid "Update Taxonomy"
+msgstr ""
+
+#: plugin/Src/Cpt.php:162
+msgid "Add New Taxonomy"
+msgstr ""
+
+#: plugin/Src/Cpt.php:163
+msgid "New Taxonomy Name"
+msgstr ""
+
+#: plugin/Src/Cpt.php:164
+msgid "Taxonomy"
+msgstr ""
+
+#: plugin/Src/Install.php:72
+msgid "The Plugin can't be activated because your PHP version"
+msgstr ""
+
+#: plugin/Src/Install.php:73
+msgid "is less than required "
+msgstr ""
+
+#: plugin/Src/Metabox.php:39
+msgid "MetaBox Title"
+msgstr ""
+
+#: plugin/Src/Metabox.php:59
+msgid "Custom Text"
+msgstr ""
+
+#: plugin/Src/RestApi.php:52
+msgid "message"
+msgstr ""
+
+#: plugin/Src/Settings.php:77
+msgid "Title"
+msgstr ""
+
+#: plugin/Src/Settings.php:78
+msgid "Description"
+msgstr ""
+
+#: plugin/Src/Settings.php:81
+msgid "helpLink"
+msgstr ""
+
+#: plugin/Src/Settings.php:181
+msgid "Show per page"
+msgstr ""
+
+#: plugin/Src/Settings.php:208
+msgid "Save"
+msgstr ""
+
+#: plugin/Src/Settings.php:252
+msgid "Section Name"
+msgstr ""
+
+#: plugin/Src/Settings.php:255
+msgid "Field Name"
+msgstr ""
+
+#: plugin/Src/Settings.php:266
+msgid "Set up settings"
+msgstr ""
+
+#: plugin/Src/Widget.php:26 plugin/Src/Widget.php:28
+msgid "Plugin widget"
+msgstr ""
+
+#: plugin/Src/Widget.php:46
+msgid "Hello, World!"
+msgstr ""
+
+#: plugin/Src/Widget.php:60
+msgid "Internal Link Master"
+msgstr ""
+
+#: plugin/Src/Widget.php:62
+msgid "Title:"
+msgstr ""
+
+#. Plugin Name of the plugin/theme
+msgid "WordPress Plugin Framework"
+msgstr ""
+
+#. Plugin URI of the plugin/theme
+msgid "https://github.com/nirjharlo/wp-plugin-framework/"
+msgstr ""
+
+#. Description of the plugin/theme
+msgid ""
+"Simple and Light WordPress plugin development framework for organized Object "
+"Oriented code for Developers."
+msgstr ""
+
+#. Author of the plugin/theme
+msgid "Nirjhar Lo"
+msgstr ""
+
+#. Author URI of the plugin/theme
+msgid "http://nirjharlo.com"
+msgstr ""

@@ -1,0 +1,368 @@
+{
+    "openapi": "3.0.2",
+    "info": {
+      "title": "DRAFT: Tpay plugins",
+      "version": "1.0",
+      "description": "# Authentication\n\n<!-- ReDoc-Inject: <security-definitions> -->"
+    },
+    "servers": [
+      {
+        "url": "https://{plugin_server_path}",
+        "description": "URL from software where plugin has been installed"
+      }
+    ],
+    "tags": [
+      {
+        "name": "products"
+      },
+      {
+        "name": "order"
+      },
+      {
+        "name": "payment"
+      }
+    ],
+    "paths": {
+      "/products": {
+        "get": {
+          "description": "Get list of products",
+          "tags": [
+            "products"
+          ],
+          "security": [
+            {
+              "BasicAuth": []
+            }
+          ],
+          "responses": {
+            "200": {
+              "description": "Success",
+              "content": {
+                "application/json": {
+                  "schema": {
+                    "type": "object",
+                    "readOnly": true,
+                    "properties": {
+                      "meta": {
+                        "type": "object",
+                        "properties": {
+                          "status": {
+                            "type": "integer"
+                          }
+                        }
+                      },
+                      "response": {
+                        "type": "object",
+                        "properties": {
+                          "products": {
+                            "type": "array",
+                            "items": {
+                              "type": "object",
+                              "properties": {
+                                "name": {
+                                  "type": "string"
+                                },
+                                "img_url": {
+                                  "type": "string"
+                                },
+                                "price": {
+                                  "type": "number"
+                                },
+                                "product_id": {
+                                  "oneOf": [
+                                    {
+                                      "type": "string"
+                                    },
+                                    {
+                                      "type": "integer"
+                                    }
+                                  ]
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            },
+            "4XX": {
+              "description": "Application Errors",
+              "content": {
+                "application/json": {
+                  "schema": {
+                    "type": "object",
+                    "readOnly": true,
+                    "properties": {
+                      "meta": {
+                        "type": "object",
+                        "properties": {
+                          "status": {
+                            "type": "integer"
+                          }
+                        }
+                      },
+                      "errors": {
+                        "type": "array",
+                        "items": {
+                          "type": "string"
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            },
+            "5XX": {
+              "description": "Unexpected Errors"
+            }
+          }
+        }
+      },
+      "/order": {
+        "post": {
+          "description": "Place an order",
+          "tags": [
+            "order"
+          ],
+          "security": [
+            {
+              "BasicAuth": []
+            }
+          ],
+          "requestBody": {
+            "required": true,
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "client": {
+                      "type": "object",
+                      "properties": {
+                        "platform_user_id": {
+                          "type": "string"
+                        },
+                        "name": {
+                          "type": "string"
+                        },
+                        "email": {
+                          "type": "string"
+                        },
+                        "phone_number": {
+                          "type": "string"
+                        },
+                        "address": {
+                          "type": "string"
+                        },
+                        "delivery_details": {
+                          "type": "object",
+                          "properties": {
+                            "locker_id": {
+                              "type": "string"
+                            }
+                          },
+                          "required": [
+                            "locker_id"
+                          ]
+                        }
+                      },
+                      "required": [
+                        "name",
+                        "phone_number",
+                        "email",
+                        "address"
+                      ]
+                    },
+                    "product_id": {
+                      "oneOf": [
+                        {
+                          "type": "string"
+                        },
+                        {
+                          "type": "integer"
+                        }
+                      ]
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "responses": {
+            "200": {
+              "description": "Success",
+              "content": {
+                "application/json": {
+                  "schema": {
+                    "type": "object",
+                    "readOnly": true,
+                    "properties": {
+                      "meta": {
+                        "type": "object",
+                        "properties": {
+                          "status": {
+                            "type": "integer"
+                          }
+                        }
+                      },
+                      "response": {
+                        "type": "object",
+                        "properties": {
+                          "order_id": {
+                            "oneOf": [
+                              {
+                                "type": "string"
+                              },
+                              {
+                                "type": "integer"
+                              }
+                            ]
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            },
+            "4XX": {
+              "description": "Application Errors",
+              "content": {
+                "application/json": {
+                  "schema": {
+                    "type": "object",
+                    "readOnly": true,
+                    "properties": {
+                      "meta": {
+                        "type": "object",
+                        "properties": {
+                          "status": {
+                            "type": "integer"
+                          }
+                        }
+                      },
+                      "errors": {
+                        "type": "array",
+                        "items": {
+                          "type": "string"
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            },
+            "5XX": {
+              "description": "Unexpected Errors"
+            }
+          }
+        }
+      },
+      "/payment": {
+        "post": {
+          "description": "Make an BLIK payment",
+          "tags": [
+            "payment"
+          ],
+          "security": [
+            {
+              "BasicAuth": []
+            }
+          ],
+          "requestBody": {
+            "required": true,
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "order_id": {
+                      "oneOf": [
+                        {
+                          "type": "integer"
+                        },
+                        {
+                          "type": "string"
+                        }
+                      ]
+                    },
+                    "blik_code": {
+                      "type": "string"
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "responses": {
+            "200": {
+              "description": "Success",
+              "content": {
+                "application/json": {
+                  "schema": {
+                    "type": "object",
+                    "readOnly": true,
+                    "properties": {
+                      "meta": {
+                        "type": "object",
+                        "properties": {
+                          "status": {
+                            "type": "integer"
+                          }
+                        }
+                      },
+                      "response": {
+                        "type": "object"
+                      }
+                    }
+                  }
+                }
+              }
+            },
+            "4XX": {
+              "description": "Application Errors",
+              "content": {
+                "application/json": {
+                  "schema": {
+                    "type": "object",
+                    "readOnly": true,
+                    "properties": {
+                      "meta": {
+                        "type": "object",
+                        "properties": {
+                          "status": {
+                            "type": "integer"
+                          }
+                        }
+                      },
+                      "errors": {
+                        "type": "array",
+                        "items": {
+                          "type": "string"
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            },
+            "5XX": {
+              "description": "Unexpected Errors"
+            }
+          }
+        }
+      }
+    },
+    "components": {
+      "schemas": {},
+      "securitySchemes": {
+        "BasicAuth": {
+          "type": "http",
+          "scheme": "basic"
+        }
+      }
+    }
+  }

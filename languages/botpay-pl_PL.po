@@ -1,0 +1,197 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: bot-pay\n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: 2021-11-29 22:16+0100\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: pl\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 3.0\n"
+"X-Poedit-Basepath: ..\n"
+"Plural-Forms: nplurals=3; plural=(n==1 ? 0 : n%10>=2 && n%10<=4 && (n%100<12 "
+"|| n%100>14) ? 1 : 2);\n"
+"X-Poedit-SearchPath-0: Desktop/Documents/Code/botpay/trunk/.\n"
+"X-Poedit-SearchPath-1: Documents/Code/botpay/trunk/plugin/Src\n"
+
+#: plugin/Src/Settings.php:602
+msgid "to test your chatbot!"
+msgstr "aby przetestować swojego chatbota!"
+
+#: plugin/Src/Settings.php:602
+msgid "Chatbot was created. Click"
+msgstr "Chatbot został utworzony. Kliknij"
+
+#: plugin/Src/Settings.php:600
+msgid ""
+"W celu aktywacji kanału płatności na Twoim kanale Facebook Messenger, podaj "
+"poniej wymagane dane w 3 krokach."
+msgstr ""
+"W celu aktywacji kanału płatności na Twoim kanale Facebook Messenger, podaj "
+"poniej wymagane dane w 3 krokach."
+
+#: plugin/Src/Settings.php:589
+msgid "Security Code:"
+msgstr "Podaj Security Code:"
+
+#: plugin/Src/Settings.php:580
+msgid "Merchant ID:"
+msgstr "Podaj Merchant ID:"
+
+#: plugin/Src/Settings.php:571
+msgid "API Password:"
+msgstr "Podaj hasło API:"
+
+#: plugin/Src/Settings.php:562
+msgid "API ID:"
+msgstr "Podaj API ID:"
+
+#: plugin/Src/Settings.php:552
+msgid "TPay account credentials"
+msgstr "Dane konta TPay"
+
+#: plugin/Src/Settings.php:543
+msgid "Number of items displayed"
+msgstr "Number of items displayed"
+
+#: plugin/Src/Settings.php:534
+msgid "Algorythm of items displayed"
+msgstr "Algorytm wyświetlanych produktów"
+
+#: plugin/Src/Settings.php:525
+msgid "WooCommerce delivery method"
+msgstr "Metoda dostawy w WooCommerce"
+
+#: plugin/Src/Settings.php:516
+msgid "Delivery method"
+msgstr "Sposób dostawy"
+
+#: plugin/Src/Settings.php:507
+msgid "Products category"
+msgstr "Kategoria produktowa"
+
+#: plugin/Src/Settings.php:498
+msgid "Your shop terms url"
+msgstr "Link do regulaminu Twojego sklepu"
+
+#: plugin/Src/Settings.php:489
+msgid "Contact email - help"
+msgstr "Email kontaktowy - pomoc"
+
+#: plugin/Src/Settings.php:480
+msgid "IBAN number for payments"
+msgstr "Numer IBAN do płatności"
+
+#: plugin/Src/Settings.php:468
+msgid "User e-mail address"
+msgstr "Adres email użytkownika"
+
+#: plugin/Src/Settings.php:457
+msgid "Facebook fanpage"
+msgstr "Strona na Facebooku"
+
+#: plugin/Src/Settings.php:438
+msgid "Plugin confifuration and TPay payment activation in Facebook Messenger"
+msgstr "Konfiguracja pluginu i aktywacja płatności TPay w Facebook Messenger"
+
+#: plugin/Src/Settings.php:415
+msgid "Chatbots settings"
+msgstr "Ustawienia - Chatbot"
+
+#: plugin/Src/Settings.php:410
+msgid "Click \"Connect\" and connect chatbot to your fanpage"
+msgstr "Kliknij „Połącz” i podłącz chatbota pod wybrany fanpage."
+
+#: plugin/Src/Settings.php:409
+msgid "Step 3 - Fanpage"
+msgstr "Krok 3 - Fanpage"
+
+#: plugin/Src/Settings.php:402
+msgid "Now add configuration of chatbot and TPay credentials"
+msgstr "Teraz wprowadź konfigurację chatbota oraz dane API TPay"
+
+#: plugin/Src/Settings.php:401
+msgid "Step 2 - Chatbot"
+msgstr "Krok 2 - Chatbot"
+
+#: plugin/Src/Settings.php:394
+msgid "First fill your email address"
+msgstr "Najpierw wprowadź swój adres email."
+
+#: plugin/Src/Settings.php:393
+msgid "Step 1 - Account"
+msgstr "Krok 1 - Konto"
+
+#: plugin/Src/Settings.php:355
+msgid "Save settings"
+msgstr "Zapisz ustawienia"
+
+#: plugin/Src/Settings.php:316
+msgid "Show per page"
+msgstr "Show per page"
+
+#: plugin/Src/Settings.php:160
+msgid "Error occured"
+msgstr "Wystąpił błąd. "
+
+#: plugin/Src/RestApi.php:278
+msgid "Password is invalid."
+msgstr "Hasło jest niepoprwane."
+
+#: plugin/Src/RestApi.php:275
+msgid "Username is invalid."
+msgstr "Użytwkonik jest niepoprwany."
+
+#: plugin/Src/RestApi.php:268
+msgid "Password is missing."
+msgstr "Brakuje hasła."
+
+#: plugin/Src/RestApi.php:262
+msgid "Username is missing."
+msgstr "Brakuje nazwy użytkownika."
+
+#: plugin/Src/RestApi.php:116
+msgid "message"
+msgstr "wiadomość"
+
+#: plugin/Src/Install.php:73
+msgid "is less than required "
+msgstr "mniej niż wymagane "
+
+#: plugin/Src/Install.php:72
+msgid "The Plugin can't be activated because your PHP version"
+msgstr "Plugin nie może zostać aktywowany z powodu wersji PHP"
+
+#: plugin/PluginLoader.php:261
+msgid "You are not currently logged in."
+msgstr "Nie jesteś zalogowany."
+
+#: plugin/PluginLoader.php:149
+msgid "Database table Not installed correctly."
+msgstr "Baza danych nie jest zainstalowana porawnie."
+
+#. Author URI of the plugin
+msgid "https://kodabots.com/"
+msgstr "https://kodabots.com/"
+
+#. Author of the plugin
+msgid "KODA"
+msgstr "KODA"
+
+#. Description of the plugin
+msgid ""
+"Prosty i szybki chatbot dla Messengera z integracją płatności TPay oraz "
+"Twoim sklepem Woocommerce."
+msgstr ""
+"Prosty i szybki chatbot dla Messengera z integracją płatności TPay oraz "
+"Twoim sklepem Woocommerce."
+
+#. Plugin URI of the plugin
+msgid "https://botpay.org/"
+msgstr "https://botpay.org/"
+
+#. Plugin Name of the plugin
+msgid "BotPay"
+msgstr "BotPay"
